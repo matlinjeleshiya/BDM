@@ -8,7 +8,7 @@ def home():
 
 @app.route("/download")
 def download_file():
-    file_path = r"C:\Users\MATLIN JELESHIYA\Desktop\vidhyasagar\BDM\BDMDATA.xlsx"
+    file_path = "BDMDATA (8).xlsx"
     return send_file(file_path, as_attachment=True)
 
 if __name__ == "__main__":
