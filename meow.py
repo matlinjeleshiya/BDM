@@ -7,7 +7,7 @@ app = Flask(__name__)
 def redirect_to_netlify():
     return redirect("https://myexcelsheetuiaio.netlify.app", code=302)  
 @app.route("/")
-@app.route("https://myexcelsheetuiaio.netlify.app/")
+@app.route("/myexcelsheetuiaio.netlify.app")
 def home():
     return render_template("uiaio.html")  
 
